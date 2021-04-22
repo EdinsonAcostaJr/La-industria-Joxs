@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hola weon</title>
+	<style>
+	body{
+      margin: 25px;
+      margin-top: 50px;
+      padding: 0;
+      margin-left: 120px;
+      margin-right: 120px;
+      font-size: 20px;
+		
+	}	
+	#more{
+
+		display: none;
+	}
+
+	</style>
+</head>
+<body>
+
+	<h1>titulo</h1>
+	<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but <span id="dots">.....</span><span id="more">also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+	</p>
+	<button type="button" id="read" onclick="read()">Leer Mas</button>
+<script>
+var i=0;	
+
+function read(){
+
+if(!i){
+
+	document.getElementById('more').style.display="inline";
+	document.getElementById('dots').style.display="none";
+	document.getElementById('read').innerHTML="Leer Menos";
+	i=1;
+}
+else {
+      document.getElementById('more').style.display="none";
+	document.getElementById('dots').style.display="inline";
+	document.getElementById('read').innerHTML="Leer Mas";
+    i=0;
+
+}
+}
+
+</script>
+</body>
+</html>
